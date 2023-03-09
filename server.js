@@ -10,6 +10,7 @@ app.get("/", async (req, res) => {
   );
   const data = response.data;
   res.status(200).json(data);
+  console.log(data);
 });
 
 app.listen(port, () => console.log(`app is running :${port}`));
